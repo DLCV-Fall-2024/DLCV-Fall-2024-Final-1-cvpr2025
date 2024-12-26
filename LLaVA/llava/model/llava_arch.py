@@ -104,7 +104,7 @@ class LlavaMetaModel:
 
             self.mm_projector.load_state_dict(get_w(mm_projector_weights, 'mm_projector'))
 
-        if pretrain_bbox_encoder is not None:
+        if pretrain_bbox_encoder is not None and pretrain_bbox_encoder != "None":
             print("loading bbox_tower weights")
             bbox_tower_weights = torch.load(pretrain_bbox_encoder, map_location='cpu')
             def get_w(weights, keyword):
