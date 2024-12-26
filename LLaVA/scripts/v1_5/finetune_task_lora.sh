@@ -7,7 +7,7 @@ pretrain_bbox_encoder=$4
 
 deepspeed llava/train/train_mem.py \
     --lora_enable True --lora_r 4 --lora_alpha 64 --use_dora False --mm_projector_lr 5e-5 --bb_encoder_lr 5e-5 \
-    --deepspeed ./scripts/zero2.json \
+    --deepspeed ./scripts/zero2.json\
     --model_name_or_path liuhaotian/llava-v1.5-7b \
     --version v1 \
     --data_path $data_path \
