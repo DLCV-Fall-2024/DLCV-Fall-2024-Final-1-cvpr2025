@@ -9,7 +9,7 @@ output_dir=$3
 
 # can exist arguments
 # /mnt/HDD_1/walker/dlcv_checkpoints/llava-v1.5-7b-pretrain-1224/checkpoint-900/bbox_encoder.bin
-pretrain_bbox_encoder=${4:-""}
+pretrain_bbox_encoder=${4:-None}
 
 
 cd LLaVA
